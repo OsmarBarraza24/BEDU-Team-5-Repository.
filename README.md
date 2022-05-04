@@ -1,5 +1,5 @@
 ><p align="center">
-><b style="font-size:10vw">Equipo 5</b>
+><h3 style="font-size:10vw">Equipo 5</h3>
 ></p>
 >
 >**-Osmar Barraza**
