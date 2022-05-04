@@ -1,9 +1,12 @@
-> # Equipo 5 Módulo 4.#
+> # Equipo 5 Módulo 4.
 >
 >
 >-Osmar Barraza
+>
 >-Dalyn Lara
+>
 >-Cruz Gil
+>
 >-Carlos Valdivia
 >
 >Módulo: QA Automation testing V2 - Cognizant
