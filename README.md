@@ -1,8 +1,6 @@
 <p align="center">
 <b>Equipo 5</b> 
 </p>
->
->
 >**-Osmar Barraza**
 >
 >**-Dalyn Lara**
