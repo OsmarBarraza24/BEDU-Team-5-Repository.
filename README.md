@@ -1,6 +1,4 @@
-><p align="center">
-><h3 style="font-size:10vw">Equipo 5</h3>
-></p>
+># Equipo 5
 >
 >**-Osmar Barraza**
 >
