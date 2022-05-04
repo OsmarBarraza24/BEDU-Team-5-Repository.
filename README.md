@@ -1,5 +1,5 @@
 <p align="center">
-Equipo 5 
+<b>Equipo 5</b> 
 </p>
 >
 >
