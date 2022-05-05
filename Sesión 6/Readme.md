@@ -1,7 +1,7 @@
 > # Post Work Sesión 6:
 > ## Test Driven Development
 >
->![2](https://user-images.githubusercontent.com/103444882/167027374-ef41c491-d7af-4515-86cf-a5c7f8ee2b82.png)
+>![2](https://user-images.githubusercontent.com/103444882/167027374-ef41c491-d7af-4515-86cf-a5c7f8ee2b82.png width=1)
 >
 >![3](https://user-images.githubusercontent.com/103444882/167027377-54d0a6e2-330e-42a1-b6da-0ac8a0da6a31.png)
 >
