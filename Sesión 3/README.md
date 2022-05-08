@@ -53,12 +53,16 @@ Para cerrar nuestro postwork, revisemos el siguiente video que realiza un benchm
 
 ¿Terminaste la actividad? responde las siguientes preguntas:
 
-¿Notaste alguna diferencia en el tiempo de ejecución de las pruebas?
+**¿Notaste alguna diferencia en el tiempo de ejecución de las pruebas?**
+
 Al ser una cantidad pequeña de pruebas, la diferencia no fue tan notoria, sin embargo, después de correr las pruebas en ambos modos un par de veces, notamos que en paralelo el tiempo promedio era de 94 milisegundos, mientras que secuenciales era de 96 milisegundos.
 
-¿Qué ventajas consideras que aporta la ejecución en paralelo?
+**¿Qué ventajas consideras que aporta la ejecución en paralelo?**
+
 Considero que cuando el proyecto es grande y se requiere lanzar todas las pruebas a la vez, las pruebas paralelas son útiles porque ahorran tiempo.
-¿Crees que existe alguna desventaja de ejecutar nuestras pruebas en paralelo?
+
+**¿Crees que existe alguna desventaja de ejecutar nuestras pruebas en paralelo?**
+
 Probablemente cuando se requieran hacer pruebas por bloques o secuenciales no se tendría muy claro que parte de la prueba fallo.
 
 
