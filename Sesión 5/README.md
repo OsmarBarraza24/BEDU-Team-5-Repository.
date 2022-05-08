@@ -29,9 +29,137 @@ Durante nuestro work, desarrollamos algunas funcionalidades en la clase SomeBusi
 Sigue estas instrucciones:
 
 1. En el archivo SomeBusinessLogic.java  añade una función llamada calculateSubstractionWithADataService
-1. Para su implementación basate en lo realizado con calculateSumWithADataService
-1. En el archivo SomeBusinessLogicMockTest.java crea tres metodos con los siguientes nombres: calculateSubstractionUsingDataService_basic, calculateSubstractionUsingDataService_empty y calculateSubstracionUsingDataService_oneValue
-1. Implementa los mocks con múltiples valores de retorno: Mas información: https://dev.to/srinivasu619/mockito-returning-a-different-value-for-the-same-function-invocation-434c 
+
+```java
+  public class SomeBusinessLogic {
+
+    private SomeDataService someDataService;
+    
+    ...
+  
+    public int calculateSubstractionWithADataService() {
+        int res =0;
+
+        int[] data = someDataService.retrieveAllData();
+
+        if(data.length!= 0){
+            for(int i = 0; i < data.length; i++){
+                if(i == 0)
+                    res = data[i];
+                else
+                    res -= data[i];
+            }
+        }
+        return res;
+    }
+
+}
+```
+2. Para su implementación basate en lo realizado con calculateSumWithADataService
+
+```java
+  public class SomeBusinessLogic {
+
+    private SomeDataService someDataService;
+    
+    ...
+    
+    public int calculateSumWithADataService() {
+        int sum = 0;
+        int[] data = someDataService.retrieveAllData();
+        for(int value:data) {
+            sum += value;
+        }
+
+        return sum;
+    }
+  
+    public int calculateSubstractionWithADataService() {
+        int res =0;
+
+        int[] data = someDataService.retrieveAllData();
+
+        if(data.length!= 0){
+            for(int i = 0; i < data.length; i++){
+                if(i == 0)
+                    res = data[i];
+                else
+                    res -= data[i];
+            }
+        }
+        return res;
+    }
+
+}
+```
+3. En el archivo SomeBusinessLogicMockTest.java crea tres metodos con los siguientes nombres: calculateSubstractionUsingDataService_basic, calculateSubstractionUsingDataService_empty y calculateSubstracionUsingDataService_oneValue
+
+```java
+@ExtendWith({MockitoExtension.class})
+
+class SomeBusinessLogicMockTest {
+
+    @InjectMocks
+    SomeBusinessLogic business;
+
+    @Mock
+    SomeDataService dataServiceMock;
+
+    ...
+
+    @Test
+    public void calculateSubstractionUsingDataService_basic() {
+        // Arrange
+        when(dataServiceMock.retrieveAllData()).thenReturn(new int[]{-20, 5, 7});
+        assertEquals(-32,business.calculateSubstractionWithADataService());
+    }
+
+    @Test
+    public void calculateSubstractionUsingDataService_empty() {
+
+        //Arrange
+        when(dataServiceMock.retrieveAllData()).thenReturn(new int[]{});
+        assertEquals(0,business.calculateSubstractionWithADataService());
+    }
+
+    @Test
+    public void calculateSubstractionUsingDataService_OneElement(){
+
+        //Arrange
+        when(dataServiceMock.retrieveAllData()).thenReturn(new int[]{5});
+        assertEquals(5,business.calculateSubstractionWithADataService());
+    }
+    ...
+
+}
+```
+
+4. Implementa los mocks con múltiples valores de retorno: Mas información: https://dev.to/srinivasu619/mockito-returning-a-different-value-for-the-same-function-invocation-434c 
+
+```java
+@ExtendWith({MockitoExtension.class})
+
+class SomeBusinessLogicMockTest {
+
+    @InjectMocks
+    SomeBusinessLogic business;
+
+    @Mock
+    SomeDataService dataServiceMock;
+
+    ...
+
+    @Test
+    public void calculateSubstractionUsingDataService_Multiple() {
+        // Arrange
+        when(dataServiceMock.retrieveAllData()).thenReturn(new int[]{-20, 5, 7},new int[]{5},new int[]{});
+        assertEquals(-32,business.calculateSubstractionWithADataService());
+        assertEquals(5,business.calculateSubstractionWithADataService());
+        assertEquals(0,business.calculateSubstractionWithADataService());
+    }
+
+}
+```
 
 
 ### Indicaciones generales
@@ -39,7 +167,9 @@ Sigue estas instrucciones:
 ¿Terminaste la actividad? Responde las siguientes preguntas:
 
 **¿Cómo decidiste inyectar el mock?**
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+El mock fue inyectado usando la declaración ```java @InjectMocks SomeBusinessLogic business;``` y ```java @Mock SomeDataService dataServiceMock;``` evitando inicializar estos objetos cada vez.
+    
 **¿Implementaste un solo método de prueba con múltiples valores de retorno o implementaste múltiples pruebas? ¿Por qué?**
 
 Implementamos una prueba por cada caso y al final una prueba con múltiples valores para comprender mejor el funcionamiento
