@@ -30,18 +30,40 @@ Continuaremos con el desarrollo del software de entrevistadores y exploraremos l
 ### Sigue estas instrucciones:
 
 - En tu archivo build.grade asegurate de tener junit en su versión 5.3 o superior
+    ```
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+        implementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    }
+    ```
 - En el mismo archivo asegurate que la configuración test luzca de la siguiente forma
 
+    ```
+    test {
+        useJUnitPlatform()
+        systemProperty 'junit.jupiter.execution.parallel.enabled', 'true'
+    }
+    ```
 
-```
-test {
-    useJUnitPlatform()
-    systemProperty 'junit.jupiter.execution.parallel.enabled', 'true'
-}
-```
+- Ejecuta las pruebas
 
--Ejecuta las pruebas
--Cambia la configuración anterior a false y observa las diferencias en los tiempos de ejecución
+   Prueba en ejecución paralela
+   ![S3_3-parallel](https://user-images.githubusercontent.com/77414220/167284093-5a605bc0-aa79-47ad-a153-ad4341d441de.PNG)
+   Prueba en ejecución secuencial
+   ![S3_3-notparallel](https://user-images.githubusercontent.com/77414220/167284122-4c3d250d-59b9-4423-81d1-4225fc275d48.PNG)
+
+
+    
+- Cambia la configuración anterior a false y observa las diferencias en los tiempos de ejecución
+    ```
+    test {
+        useJUnitPlatform()
+        systemProperty 'junit.jupiter.execution.parallel.enabled', 'false'
+    }
+    ```
 
 
 Para cerrar nuestro postwork, revisemos el siguiente video que realiza un benchmark de la ejecución en paralelo entre diferentes frameworks de pruebas:
