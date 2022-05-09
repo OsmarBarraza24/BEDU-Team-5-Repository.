@@ -2,8 +2,8 @@
 
 ># Equipo 5:
 >
->>**-Osmar Barraza**
->>
+>**-Osmar Barraza**
+>
 >**-Dalyn Lara**
 >
 >**-Cruz Gil**
