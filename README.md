@@ -2,13 +2,13 @@
 
 ># :busts_in_silhouette: Equipo 5:
 >
->**-Osmar Barraza**
+>**- Osmar Barraza**
 >
->**-Dalyn Lara**
+>**- Dalyn Lara**
 >
->**-Cruz Gil**
+>**- Cruz Gil**
 >
->**-Carlos Valdivia**
+>**- Carlos Valdivia**
 >
 ># Módulo: QA Automation testing V2 - Cognizant
 >## :bookmark_tabs: Contenido
