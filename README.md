@@ -26,6 +26,6 @@
 >
 >>-[Sesion 7: Test Quality](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%207)
 
->## :dart: Objetivos
+>## :mega: Informacion General
 >
->### El alumno comprendera los principios del aseguramiento de calidad (Quality Assurance - QA), sera capaz de: escribir pruebas unitarias y pruebas de integracion, así como configurar entornos de desarollo y despiegue continuo.
+>### En el presente repositorio se encuentra una recopilacion de los Post Work realizados por el equipo 5.
