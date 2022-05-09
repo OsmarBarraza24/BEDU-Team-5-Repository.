@@ -213,7 +213,7 @@ public class Candidate implements Serializable {
     }
 }
 ```
-```java Discipline ```
+``` Discipline ```
 ```java 
 public class Discipline implements Serializable {
     static ArrayList<Discipline> data;
