@@ -11,7 +11,7 @@
 >**-Carlos Valdivia**
 >
 ># Módulo: QA Automation testing V2 - Cognizant
->## Contenido
+>## :bookmark_tabs: Contenido
 >>-[Sesion 1:Introduction to Java Testing](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%201)
 >
 >>-[Sesion 2: Unit Testing in Java](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%202)
@@ -26,6 +26,6 @@
 >
 >>-[Sesion 7: Test Quality](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%207)
 
->## Objetivos
+>## :dart: Objetivos
 >
 >### El alumno comprendera los principios del aseguramiento de calidad (Quality Assurance - QA), sera capaz de: escribir pruebas unitarias y pruebas de integracion, así como configurar entornos de desarollo y despiegue continuo.
