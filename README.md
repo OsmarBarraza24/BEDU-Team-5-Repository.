@@ -2,8 +2,8 @@
 
 ># Equipo 5:
 >
->**-Osmar Barraza**
->
+>>**-Osmar Barraza**
+>>
 >**-Dalyn Lara**
 >
 >**-Cruz Gil**
@@ -12,14 +12,13 @@
 >
 ># Módulo: QA Automation testing V2 - Cognizant
 >## Contenido
--[Sesion 1:Introduction to Java Testing](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%201)
--[Sesion 2: Unit Testing in Java](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%202)
--[Sesion 3: JUnit & TestNG](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%203)
--[Sesion 4: Automation with Selenium and Black and White Box testing](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%204)
--[Sesion 5: Mockito Tool](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%205)
--[Sesion 6: Test Driven Development](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%206)
--[Sesion 7: Test Quality](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%207)
-
+>-[Sesion 1:Introduction to Java Testing](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%201)
+>-[Sesion 2: Unit Testing in Java](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%202)
+>-[Sesion 3: JUnit & TestNG](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%203)
+>-[Sesion 4: Automation with Selenium and Black and White Box testing](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%204)
+>-[Sesion 5: Mockito Tool](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%205)
+>-[Sesion 6: Test Driven Development](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%206)
+>-[Sesion 7: Test Quality](https://github.com/OsmarBarraza24/BEDU-Team-5-Repository./tree/main/Sesi%C3%B3n%207)
 
 >## Objetivos
 >
