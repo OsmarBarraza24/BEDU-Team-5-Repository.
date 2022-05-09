@@ -1,3 +1,5 @@
+![Cognizant_logo_2022 svg](https://user-images.githubusercontent.com/77414220/167276034-fc9aba50-8b81-4ce6-8da8-db3aea61e87b.png)
+
 ># Equipo 5:
 >
 >**-Osmar Barraza**
