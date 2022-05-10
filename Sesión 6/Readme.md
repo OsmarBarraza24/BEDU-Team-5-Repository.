@@ -100,12 +100,12 @@ Se agrega el bloque de código que permite pasar la nueva prueba, así como las 
 Se agrega una prueba más, la cual se ejecuta y pasa el test.
 ![p8](https://user-images.githubusercontent.com/77414220/167032286-a14367ee-b73f-4577-a13d-7ccaa0e44e2f.PNG)
 
-En vista de que la prueba anterior paso, se agrega una prueba más, esta vez con tres elementos, esperando que falle.
+En vista de que la prueba anterior paso, se agrega una prueba más, esta vez con tres elementos, esperando que falle, pero inesperadamente pasa el test.
 <!-- >![11](https://user-images.githubusercontent.com/103444882/167027399-22a9f536-40bd-4817-a36f-ebddd77b52ae.png) -->
 ><img src="https://user-images.githubusercontent.com/103444882/167027399-22a9f536-40bd-4817-a36f-ebddd77b52ae.png"  width="600" height="300"   />
 
-La prueba ha fallado, por lo que se agrega el bloque de código que permite que el test pase. Se realiza el test nuevamente y esta vez pasa.
 ![p9](https://user-images.githubusercontent.com/77414220/167032350-8586d283-32bf-4452-813c-37b728b31aae.PNG)
+
 
 Se agrega una prueba más, esperando que falle.
 <!-- >![12](https://user-images.githubusercontent.com/103444882/167027405-3a6744b3-9726-4a5d-b096-49158fa83060.png) -->
@@ -154,6 +154,32 @@ Los casos se han vuelto muy específicos, por lo que ha llegado el momento de re
 
 
 ![p16](https://user-images.githubusercontent.com/77414220/167033366-376952d0-4f8a-4412-bf9d-8365a04d22c6.PNG)
+
+Se realiza la última refactorización del código y se ejecutan las pruebas, esperando que ninguna falle el test.
+```java
+public class bubbleSort {
+
+    public static int[] sorter(int[] unsorted) {
+        if (unsorted.length <= 1)
+            return unsorted;
+
+        for (int i = 0; i < unsorted.length; i++)
+                for (int j = i + 1; j < unsorted.length; j++) {
+                    int temp = 0;
+                    if (unsorted[i] > unsorted[j]) {
+                        temp = unsorted[i];
+                        unsorted[i] = unsorted[j];
+                        unsorted[j] = temp;
+                    }
+                }
+        return unsorted;
+    }
+}
+```
+![S6_23](https://user-images.githubusercontent.com/77414220/167701518-65cb3045-0e52-4b47-83e8-75920eced294.PNG)
+
+Se comprueba que la refactorización del código ha sido exitosa, y la aplicación esta finalizada.
+
 
 ### Desarrollo QuickSort
 Una vez funcionando Bubblesort, se decide implementar el método Quicksort, por lo cual, se crea la clase sin ningún método y la primera prueba, que es un arreglo vacío. Se ejecuta la prueba y el test falla, como se espera.
