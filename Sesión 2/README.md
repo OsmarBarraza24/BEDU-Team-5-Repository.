@@ -334,12 +334,6 @@ public class Discipline implements Serializable {
 }
 ```
 
-```Interview ```
-
-```java
-...
-```
-
 ```Interviewer ```
 ```java
 public class Interviewer implements Serializable {
@@ -984,11 +978,6 @@ public class DisciplineTest {
 }
 ```
 ![S2_3](https://user-images.githubusercontent.com/77414220/167504462-bb49999f-dac2-4511-b606-1cfb0135f90d.PNG)
-
-``` Interview ```
-```java
-...
-```
 
 ``` InterviewerTest```
 ```java
