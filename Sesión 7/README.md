@@ -24,6 +24,9 @@ Adicionalmente tendrás que calcular la complejidad ciclomática de este código
 
 - Crea un nuevo proyecto spring o añadelo como dependencia.
 
+![aaa](https://user-images.githubusercontent.com/23124413/168028619-3129dc2d-b1f6-4eb4-8fc8-9b2aead00ea2.jpg)
+
+
 - Añade un nuevo endpoint tipo POST con ruta /add-interviewer  y cuya entrada serán todos los datos necesarios para añadir un nuevo entrevistador.
 
 ![Captura de pantalla 2022-05-12 013224](https://user-images.githubusercontent.com/23124413/168027813-df2d9ec1-fcdd-438a-9f2c-40f8a6534ecf.jpg)
